@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+}
+
+.bar::-webkit-scrollbar {
+  display: none;
+}
