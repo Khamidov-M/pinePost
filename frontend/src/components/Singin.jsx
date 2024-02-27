@@ -9,6 +9,7 @@ import { client } from "../client";
 const Singin = () => {
   const navigate = useNavigate();
   const responseGoogle = (response) => {
+    if (!response.profileObj) return;
     localStorage.setItem("user", JSON.stringify(response.profileObj));
     const { name, googleId, imageUrl } = response.profileObj;
     const doc = {
