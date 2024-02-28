@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 const Home = () => {
   return (
     <div className="flex">
-      <div className="w-[15%]">
+      <div className=" w-60">
         <Sidebar />
       </div>
       <div className="w-[85%]">
